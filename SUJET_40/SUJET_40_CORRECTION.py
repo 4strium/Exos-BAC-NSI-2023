@@ -2,16 +2,16 @@
 
 # Exo 1 :
 def nombre_de_mots(phrase):
-    mot = 1
+    mot = 0
     for char in phrase :
-        if char == ' ':
+        if char == ' ' or char == '.':
             mot += 1
     return mot
 
 # Appels de vérification :
 print("\n ---- Exo 1 ---- ")
+print(nombre_de_mots('Cet exercice est simple.'))
 print(nombre_de_mots('Le point d exclamation est separe !'))
-print(nombre_de_mots('Il y a un seul espace entre les mots !'))
 print(nombre_de_mots('Combien de mots y a t il dans cette phrase ?'))
 print(nombre_de_mots('Fin.'))
 
